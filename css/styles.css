@@ -5,3 +5,28 @@
 #rulesList {
   display: none;
 }
+
+.jumbotron {
+  background-color: black;
+}
+
+img {
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+  animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+label {
+  color: white;
+}
