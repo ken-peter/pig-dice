@@ -64,6 +64,10 @@ var clearValues = function() {
 // User Interface
 $(document).ready(function() {
 
+  $("button#rules").click(function(event) {
+    ("#ruleslist").show();
+  });
+
   $("button#start").click(function(event) {
     player1 = new Player(true);
     player2 = new Player(false);
@@ -124,5 +128,7 @@ $(document).ready(function() {
     $("#die-roll-2").empty();
     player2.winnerCheck();
   });
+
+
 
 });
