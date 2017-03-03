@@ -8,6 +8,7 @@
 
 .jumbotron {
   background-color: black;
+  color: white;
 }
 
 img {
@@ -49,4 +50,8 @@ label {
 .rules {
   height: 80px;
   width: 80px;
+}
+
+.col-md-4 {
+  padding-bottom: px;
 }
