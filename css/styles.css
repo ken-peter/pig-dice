@@ -14,8 +14,23 @@ img {
   margin-top: 25px;
   font-size: 21px;
   text-align: center;
-  animation: fadein 2s;
-  /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+em {
+  margin-top: 25px;
+  font-size: 21pt;
+  text-align: center;
+  animation: fadein 8s;
 }
 
 @keyframes fadein {
@@ -29,4 +44,9 @@ img {
 
 label {
   color: white;
+}
+
+.rules {
+  height: 80px;
+  width: 80px;
 }
