@@ -2,9 +2,10 @@
 <html>
 
 <head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.1.1.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
   <title>Pig Dice</title>
 </head>
@@ -26,21 +27,40 @@
           <input required class="player2Name form-control" type="text">
         </div>
       </form>
-      <button id="start" class="btn-info btn">Start</button>
+      <button id="start" class="btn-info btn-lg">Start</button>
     </div>
     <!-- creating a fadedown for the rules and instructions -->
-    <div class="container">
-      <h3 class="head text-center" style="font-size:18pt; font-weight: bold;"><img class="rules" src="img/dicce2.png"> <em>RULES TO THE GAME</em></h3>
-      <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "pass":</p>
-      <ul>
-        <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
-        <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
-        <li>If a player chooses to "pass", their turn total is added to their score, and it becomes the next player's turn.</li>
-      </ul>
-      <p>The first player to score 100 or more points wins.</p>
+    <!-- Trigger the modal with a button -->
+    <button id="btn-rules" type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">Know The Rules</button>
 
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
 
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"></button>
+            <h3 class="head text-center" style="font-size:18pt; font-weight: bold;"><img class="rules" src="img/dicce2.png"><em>RULES TO THE GAME</em></h3>
+          </div>
+          <div class="modal-body">
+            <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "pass":</p>
+            <ul>
+              <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+              <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+              <li>If a player chooses to "pass", their turn total is added to their score, and it becomes the next player's turn.</li>
+            </ul>
+            <p>The first player to score 100 or more points wins.</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
     </div>
+
   </div>
   <div class="player-console jumbotron">
     <div class="row">
